@@ -77,6 +77,16 @@ class listener implements EventSubscriberInterface
 			$notifications_data[] = array('item_type' => 'notification.type.bookmark', 'method' => 'notification.method.email');
 		}
 
+		if ($this->config['ud_type_close'] != $this->constants['notification'])
+		{
+			$notifications_data[] = array('item_type' => 'notification.type.report_post_closed', 'method' => 'notification.method.email');
+		}
+
+		if ($this->config['ud_type_forum_post'] != $this->constants['notification'])
+		{
+			$notifications_data[] = array('item_type' => 'notification.type.forum', 'method' => 'notification.method.email');
+		}
+
 		if ($this->config['ud_type_group'] != $this->constants['notification'])
 		{
 			$notifications_data[] = array('item_type' => 'notification.type.group_request', 'method' => 'notification.method.email');
@@ -90,6 +100,16 @@ class listener implements EventSubscriberInterface
 		if ($this->config['ud_type_pm'] != $this->constants['notification'])
 		{
 			$notifications_data[] = array('item_type' => 'notification.type.pm', 'method' => 'notification.method.email');
+		}
+
+		if ($this->config['ud_type_pm_close'] != $this->constants['notification'])
+		{
+			$notifications_data[] = array('item_type' => 'notification.type.report_pm_closed', 'method' => 'notification.method.email');
+		}
+
+		if ($this->config['ud_type_pm_report'] != $this->constants['notification'])
+		{
+			$notifications_data[] = array('item_type' => 'notification.type.report_pm', 'method' => 'notification.method.email');
 		}
 
 		if ($this->config['ud_type_post'] != $this->constants['notification'])

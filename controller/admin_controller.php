@@ -197,10 +197,14 @@ class admin_controller implements admin_interface
 		$this->template->assign_vars(array(
 			'DEFAULT_DATE_FORMAT' 		=> $this->language->lang('DEFAULT_DATE_FORMAT', date($default_dateformat, time())),
 			'NOTIFY_BOOKMARK'			=> isset($this->config['ud_type_bookmark']) ? $this->config['ud_type_bookmark'] : 0,
+			'NOTIFY_CLOSE'				=> isset($this->config['ud_type_close']) ? $this->config['ud_type_close'] : 0,
+			'NOTIFY_FORUM_POST'			=> isset($this->config['ud_type_forum_post']) ? $this->config['ud_type_forum_post'] : 0,
 			'NOTIFY_GROUP'				=> isset($this->config['ud_type_group']) ? $this->config['ud_type_group'] : 0,
 			'NOTIFY_MODERATOR_APPROVAL'	=> isset($this->config['ud_type_needs_approval']) ? $this->config['ud_type_needs_approval'] : 0,
 			'NOTIFY_MODERATION_QUEUE'	=> isset($this->config['ud_moderation_queue']) ? $this->config['ud_moderation_queue'] : 0,
 			'NOTIFY_PM'			  		=> isset($this->config['ud_type_pm']) ? $this->config['ud_type_pm'] : 0,
+			'NOTIFY_PM_CLOSE'			=> isset($this->config['ud_type_pm_close']) ? $this->config['ud_type_pm_close'] : 0,
+			'NOTIFY_PM_REPORT'	  		=> isset($this->config['ud_type_pm_report']) ? $this->config['ud_type_pm_report'] : 0,
 			'NOTIFY_QUOTE'				=> isset($this->config['ud_type_quote']) ? $this->config['ud_type_quote'] : 0,
 			'NOTIFY_REPORT'				=> isset($this->config['ud_type_report']) ? $this->config['ud_type_report'] : 0,
 			'NOTIFY_SUBSCRIBED'			=> isset($this->config['ud_type_post']) ? $this->config['ud_type_post'] : 1,
@@ -265,9 +269,13 @@ class admin_controller implements admin_interface
 		$this->config->set('ud_topic_sk', $this->request->variable('topic_sk', 't'));
 		$this->config->set('ud_topic_st', $this->request->variable('topic_st', 0));
 		$this->config->set('ud_type_bookmark', $this->request->variable('ud_type_bookmark', 0));
+		$this->config->set('ud_type_close', $this->request->variable('ud_type_close', 0));
+		$this->config->set('ud_type_forum_post', $this->request->variable('ud_type_forum_post', 0));
 		$this->config->set('ud_type_group', $this->request->variable('ud_type_group', 0));
 		$this->config->set('ud_type_needs_approval', $this->request->variable('ud_type_needs_approval', 0));
 		$this->config->set('ud_type_pm', $this->request->variable('ud_type_pm', 0));
+		$this->config->set('ud_type_pm_close', $this->request->variable('ud_type_pm_close', 0));
+		$this->config->set('ud_type_pm_report', $this->request->variable('ud_type_pm_report', 0));
 		$this->config->set('ud_type_post', $this->request->variable('ud_type_post', 1));
 		$this->config->set('ud_type_quote', $this->request->variable('ud_type_quote', 0));
 		$this->config->set('ud_type_report', $this->request->variable('ud_type_report', 0));
