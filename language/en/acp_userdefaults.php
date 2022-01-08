@@ -66,6 +66,9 @@ $lang = array_merge($lang, array(
 	'MODERATOR_APPROVAL'		=> 'A post or topic needs approval',
 	'MODERATOR_NOTIFICATIONS'	=> 'Moderation Notifications',
 	'MODERATOR_REPORT'			=> 'Someone reports a post',
+	'MODERATOR_PM_REPORT'		=> 'Someone reports a private message',
+    'MODERATOR_POST_REPORT_CL'  => 'Moderator closes user report on a post',
+    'MODERATOR_PM_REPORT_CL'    => 'Moderator closes user report on a private message',
 
 	'NOTIFICATION'				=> 'Notification',
 
@@ -77,6 +80,7 @@ $lang = array_merge($lang, array(
 	'REQUEST_GROUP'				=> 'Someone requests to join a group you lead',
 	'REPLY_BOOKMARK_TOPIC'		=> 'Replies to a topic the user has bookmarked',
 	'REPLY_SUBSCRIBED_TOPIC'	=> 'Replies to a topic the user has subscribed to',
+    'REPLY_SUBSCRIBED_FORUM'    => 'Replies to a topic in a forum the user has subscribed to',
 
 	'SEND_PM'					=> 'Someone sends the user a private message',
 
