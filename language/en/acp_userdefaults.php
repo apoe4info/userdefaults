@@ -65,6 +65,7 @@ $lang = array_merge($lang, array(
 	'MISC_NOTIFICATIONS'		=> 'Miscellaneous notifications',
 	'MODERATOR_APPROVAL'		=> 'A post or topic needs approval',
 	'MODERATOR_NOTIFICATIONS'	=> 'Moderation Notifications',
+	'MODERATOR_PM_REPORT'		=> 'Someone reports a private message',
 	'MODERATOR_REPORT'			=> 'Someone reports a post',
 
 	'NOTIFICATION'				=> 'Notification',
