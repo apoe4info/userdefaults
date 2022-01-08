@@ -257,7 +257,7 @@ class admin_controller implements admin_interface
 		$this->config->set('ud_options', phpbb_optionset($this->constants['viewflash'], $this->request->variable('ud_flash', 0), $this->config['ud_options']));
 		$this->config->set('ud_options', phpbb_optionset($this->constants['viewimg'], $this->request->variable('ud_images', 0), $this->config['ud_options']));
 		$this->config->set('ud_options', phpbb_optionset($this->constants['viewsigs'], $this->request->variable('ud_sigs', 0), $this->config['ud_options']));
-		$this->config->set('ud_options', phpbb_optionset($this->constants['viewsmilies'], $this->request->variable('udl_smilies', 0), $this->config['ud_options']));
+		$this->config->set('ud_options', phpbb_optionset($this->constants['viewsmilies'], $this->request->variable('ud1_smilies', 0), $this->config['ud_options']));
 		$this->config->set('ud_post_sd', $this->request->variable('post_sd', 'a'));
 		$this->config->set('ud_post_sk', $this->request->variable('post_sk', 't'));
 		$this->config->set('ud_post_st', $this->request->variable('post_st', 0));
